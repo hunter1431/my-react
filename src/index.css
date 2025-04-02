@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Simple Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.header .logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Simple Body styling */
+.body {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.body h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.body p {
+  font-size: 1.2rem;
+  margin: 20px auto;
+  max-width: 600px;
+  color: #555;
+}
+
+.body .cta button {
+  background-color: #007BFF;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.body .cta button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Simple Footer styling */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
