@@ -1,0 +1,84 @@
+/* Basic Styles for Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+}
+
+.header .logo h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.menu-icon {
+  display: none; /* Initially hidden on larger screens */
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f4f4f4;
+}
+
+/* Mobile-Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    transform: translateX(100%); /* Initially hide the menu off-screen */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    transform: translateX(10%); /* Slide the menu in */
+  }
+
+  .nav-links li a {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block; /* Show the hamburger icon on mobile */
+  }
+
+  .logo h1 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Optional: Active menu items */
+.nav-links.active li a {
+  color: #f4f4f4;
+}
